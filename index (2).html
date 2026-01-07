@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Der Zweite Weltkrieg</title>
+  <style>
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      margin: 0;
+      background: linear-gradient(to right, #eaeaea, #f4f4f4);
+      color: #333;
+      line-height: 1.7;
+    }
+    header {
+      background: #2c2c2c;
+      color: #fff;
+      padding: 25px;
+      text-align: center;
+    }
+    nav {
+      background: #444;
+      padding: 12px;
+      text-align: center;
+    }
+    nav a {
+      color: #fff;
+      margin: 0 12px;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    nav a:hover {
+      text-decoration: underline;
+    }
+    section {
+      padding: 25px;
+      margin: 20px;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    }
+    h2 {
+      color: #222;
+      border-bottom: 2px solid #ddd;
+      padding-bottom: 6px;
+    }
+    footer {
+      background: #2c2c2c;
+      color: #fff;
+      text-align: center;
+      padding: 15px;
+      margin-top: 30px;
+    }
+  img { max-width: 100%; border-radius: 6px; }
+.map { background:#eee; padding:20px; text-align:center; }
+.hidden { display:none; }
+</style>
+</head>
+<body>
+
+<header>
+  <h1 id="title">Der Zweite Weltkrieg</h1>
+  <p id="subtitle">Von seinen Anfängen bis zu seinen Auswirkungen auf die heutige Welt</p>
+  <button onclick="switchLang()" style="margin-top:15px;padding:10px 20px;border:none;border-radius:20px;cursor:pointer;">?? Deutsch / ????</button>
+</header>
+
+<nav>
+  <a href="#anfang">Anfang</a>
+  <a href="#ursachen">Ursachen</a>
+  <a href="#verlauf">Verlauf</a>
+  <a href="#timeline">Zeitleiste</a>
+  <a href="#karte">Karte</a>
+  <a href="#bilder">Galerie</a>
+</nav>
+
+<section id="anfang">
+  <h2>Der Beginn des Zweiten Weltkriegs</h2>
+  <p>
+    Der Zweite Weltkrieg begann offiziell am 1. September 1939 mit dem Überfall
+    Deutschlands auf Polen. Kurz darauf erklärten Großbritannien und Frankreich
+    dem Deutschen Reich den Krieg.
+  </p>
+</section>
+
+<section id="ursachen">
+  <h2>Ursachen des Krieges</h2>
+  <ul>
+    <li>Die harten Bedingungen des Versailler Vertrags</li>
+    <li>Wirtschaftskrise und politische Instabilität in Europa</li>
+    <li>Aufstieg des Nationalsozialismus in Deutschland</li>
+    <li>Expansionistische Politik Deutschlands, Italiens und Japans</li>
+  </ul>
+</section>
+
+<section id="verlauf">
+  <h2>Der Verlauf des Krieges (1939–1945)</h2>
+  <p>
+    Der Krieg weitete sich rasch auf Europa, Nordafrika, Asien und den Pazifikraum
+    aus. Zu den wichtigsten Ereignissen zählen der Angriff auf die Sowjetunion
+    (1941), der Eintritt der USA nach dem Angriff auf Pearl Harbor sowie die
+    Landung der Alliierten in der Normandie (1944).
+  </p>
+</section>
+
+<section id="bilder">
+  <h2>Historische Bilder</h2>
+  <p>Beispiele historischer Szenen aus dem Zweiten Weltkrieg:</p>
+  <img src="https://upload.wikimedia.org/wikipedia/commons/a/a6/WW2_Normandy_landing.jpg" alt="D-Day">
+  <img src="https://upload.wikimedia.org/wikipedia/commons/5/54/Stalingrad_after_battle.jpg" alt="Stalingrad">
+</section>
+
+<section id="karte">
+  <h2>Karte: Alliierten und Achsenmächte</h2>
+  <div class="map">
+    <p><strong>Blau:</strong> Alliierten &nbsp; | &nbsp; <strong>Rot:</strong> Achsenmächte</p>
+    <img src="https://upload.wikimedia.org/wikipedia/commons/8/8f/World_War_II_Allies_Axis_1942.svg" alt="WW2 Map">
+  </div>
+</section>
+
+<section id="folgen">
+  <h2>Folgen des Zweiten Weltkriegs</h2>
+  <ul>
+    <li>Über 60 Millionen Todesopfer weltweit</li>
+    <li>Zerstörung großer Teile Europas und Asiens</li>
+    <li>Gründung der Vereinten Nationen (UNO)</li>
+    <li>Teilung Deutschlands und Beginn des Kalten Krieges</li>
+  </ul>
+</section>
+
+<section id="heute">
+  <h2>Auswirkungen bis heute</h2>
+  <p>
+    Die politischen, wirtschaftlichen und gesellschaftlichen Folgen des Zweiten
+    Weltkriegs prägen die internationale Ordnung bis heute. Erinnerungskultur,
+    internationale Zusammenarbeit und Friedenssicherung sind direkte Lehren aus
+    diesem historischen Ereignis.
+  </p>
+</section>
+
+<section id="timeline">
+  <h2>Zeitleiste des Zweiten Weltkriegs</h2>
+  <ul>
+    <li><strong>1939:</strong> Angriff auf Polen – Beginn des Krieges</li>
+    <li><strong>1940:</strong> Besetzung Frankreichs</li>
+    <li><strong>1941:</strong> Angriff auf die Sowjetunion & Eintritt der USA</li>
+    <li><strong>1944:</strong> Landung in der Normandie (D-Day)</li>
+    <li><strong>1945:</strong> Kapitulation Deutschlands und Japans</li>
+  </ul>
+</section>
+
+<footer>
+  <p>© 2025 – Informationsseite über den Zweiten Weltkrieg</p>
+</footer>
+
+<script>
+  let isGerman = true;
+
+  function switchLang() {
+    isGerman = !isGerman;
+    document.getElementById('title').innerText = isGerman
+      ? 'Der Zweite Weltkrieg'
+      : '????? ???????? ???????';
+
+    document.getElementById('subtitle').innerText = isGerman
+      ? 'Von seinen Anfängen bis zu seinen Auswirkungen auf die heutige Welt'
+      : '?? ??????? ??? ????????? ??? ????? ???';
+
+    document.body.dir = isGerman ? 'ltr' : 'rtl';
+  }
+</script>
+</body>
+</html>
